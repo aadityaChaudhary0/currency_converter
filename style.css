@@ -1,0 +1,82 @@
+:root{
+      --white: #f3f4f6;
+      --red: #FF5A60;
+      --customred: #fd7e82;
+      --customblue: #689eb8;
+}
+*{
+      margin: 0;
+      padding: 0;
+}
+body{
+      background-color: gray;
+      background: url("image/money.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.container{
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.app_container{
+      background-color: var(--white);  
+      border-radius: 20px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+}
+
+.currency_container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.currency_container select{
+      border: none;
+      padding: 0.2rem 0.5rem;
+      border-radius: 6px;
+}
+.dropdown{
+      background-color: var(--customblue);
+      display: flex;
+      align-items: center;
+      border-radius: 6px;
+}
+.input_container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5rem;
+}
+
+.amount_input input{
+      padding: 0.4rem 0.5rem;
+      border: none;
+      border-radius: 6px;
+}
+.button_container button{
+      cursor: pointer;
+      background-color: var(--red);
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      color: white;
+}
+.button_container button:hover{
+      background-color: var(--customred);
+}
+
+.result_container{
+      background-color: var(--customblue);
+      height: 40px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}

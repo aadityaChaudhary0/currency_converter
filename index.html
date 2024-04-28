@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Currency Converter</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+      <div class="container">
+            <div class="app_container">
+                  <h1>Currency Converter</h1>
+
+                  <div class="currency_container">
+
+                        <div class="from_currency_container dropdown">
+                              <label for="from">From</label>
+                              <img src="https://flagsapi.com/NP/flat/32.png" alt="">
+                              <select name="from" id="from">
+                                    <!-- <option value="" selected>NPR</option>
+                                    <option value="">USD</option>
+                                    <option value="">INR</option> -->
+                              </select>
+                        </div>
+
+
+                        <div class="to_currency_container dropdown">
+                              <label for="To">To</label>
+                              <img src="https://flagsapi.com/US/flat/32.png" alt="">
+                              <select name="to" id="to">
+                                    <!-- <option value="">NPR</option>
+                                    <option value="" selected>USD</option>
+                                    <option value="">INR</option> -->
+                              </select>
+                        </div>
+
+                  </div>
+                  
+
+                  <div class="input_container">
+
+                        <div class="amount_input">
+                              <label for="Amount">Amount: </label>
+                              <input type="number" placeholder="Amount" id="Amount">
+                        </div>
+
+                        <div class="button_container">
+                              <button>Convert</button>
+                        </div>
+
+                  </div>
+
+                  <div class="result_container">
+                        <h2 id="show_result"></h2>
+                  </div>
+
+
+            </div>
+      </div>
+
+
+
+
+      <script src="countrylist.js"></script>
+      <script src="script.js"></script>
+</body>
+</html>
